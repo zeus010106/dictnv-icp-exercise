@@ -6,6 +6,7 @@ import UsersController from 'App/Controllers/Http/UsersController';
 import isAuth from 'App/Middleware/Auth';
 import EventsController from 'App/Controllers/Http/EventsController';
 import GuestsController from 'App/Controllers/Http/GuestsController';
+import FreedomWallController from 'App/Controllers/Http/FreedomWallController';
 
 const Route = Router();
 
@@ -19,6 +20,9 @@ const Route = Router();
 Route.get('/user/me', isAuth, UsersController.me);
 Route.post('/user/register', isAuth, UsersController.register);
 Route.post('/user/update', isAuth, UsersController.update);
+
+//FreedomWall
+Route.post('/freedomwall/create', isAuth, FreedomWallController.create);
 
 // EVENT
 Route.post('/event/create', isAuth, EventsController.create);
