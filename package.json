@@ -2,7 +2,7 @@
   "name": "happ3n-icp-hackathon",
   "version": "0.2.0",
   "license": "MIT",
-  "author": "DvCode Technologies Inc",
+  "author": "Vilchor Perdido",
   "workspaces": [
     "backend",
     "frontend"
